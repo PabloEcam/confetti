@@ -47,7 +47,7 @@ export default function ExplosionConfetti(
 
   function explode() {
     const boom = new THREE.Object3D()
-    boom.life = Math.random() * 5 + 5
+    boom.life = (Math.random() * 5 + 5 )/ 10
     boom.position.x = -(areaWidth / 2) + areaWidth * Math.random()
     boom.position.y = fallingHeight + areaHeight - fallingSpeed
     boom.position.z = -(areaWidth / 2) + areaWidth * Math.random()
@@ -63,7 +63,7 @@ export default function ExplosionConfetti(
       particle.castShadow = enableShadows
       boom.add(particle)
 
-      particle.life = 1
+      particle.life = 0.1
 
       particle.destination = {}
       particle.destination.x = (Math.random() - 0.5) * (radius * 2) * Math.random()

@@ -14,8 +14,8 @@ function App() {
       <ambientLight />
       <OrbitControls />
 
-      <group position={[0,0,0]}>
-        <ExplosionConfetti rate={2} amount={100} fallingHeight={10} areaWidth={0.1} areaHeight={0.1} enableShadows isExploding colors={['yellow', 'white', 'orange']} />
+      <group position={[0,9,0]}>
+      <ExplosionConfetti rate={2} amount={100} fallingHeight={3} areaWidth={0.1} areaHeight={0.1} enableShadows isExploding colors={['yellow', 'white', 'orange']} />
       </group>
         <mesh receiveShadow castShadow>
           <boxGeometry args={[5,0.5,5]} />
